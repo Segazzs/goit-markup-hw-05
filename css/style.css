@@ -702,14 +702,14 @@ footer .logo-web-color {
 }
 
 .modal-label-check .span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   margin-right: 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   fill: transparent;
   overflow: hidden;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
