@@ -766,7 +766,8 @@ footer .logo-web-color {
 
 /*===================== FOOTER FORM =====================*/
 
-.footer-form {
+.footer-subscribe-form {
+  margin-left: 80px;
 }
 
 .footer-form-text {
