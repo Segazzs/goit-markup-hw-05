@@ -695,8 +695,6 @@ footer .logo-web-color {
 }
 
 .modal-label-check {
-  display: flex;
-  align-items: flex-end;
   cursor: pointer;
   margin-bottom: 0;
 }
