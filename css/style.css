@@ -514,6 +514,7 @@ footer .logo-web-color {
 
 .modal {
   position: fixed;
+  width: 408px;
   top: 0;
   left: 0;
   background-color: rgba(46, 47, 66, 0.4);
@@ -524,14 +525,14 @@ footer .logo-web-color {
   align-items: center;
   opacity: 0;
   pointer-events: none;
+
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-content {
   background: #fcfcfc;
-  box-shadow: зі значенням 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 408px;
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
@@ -544,6 +545,8 @@ footer .logo-web-color {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 72px 24px 24px 24px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .modal-close {
@@ -588,6 +591,7 @@ footer .logo-web-color {
   text-align: center;
   margin-bottom: 8px;
   color: rgba(46, 47, 66, 1);
+  margin-bottom: 16px;
 }
 
 .modal-form {
@@ -633,7 +637,7 @@ footer .logo-web-color {
   outline: none;
   background-color: transparent;
   outline: transparent;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input-wrap:focus-within .modal-input {
@@ -656,7 +660,6 @@ footer .logo-web-color {
 .textarea {
   height: 120px;
   resize: none;
-  margin-bottom: 16px;
   padding: 8px 16px;
   font-size: 12px;
   line-height: 1.17;
@@ -664,11 +667,15 @@ footer .logo-web-color {
   color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
   outline: transparent;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea:focus {
+  border-color: #4d5ae5;
 }
 
 .modal-textarea {
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 
 .modal-textarea::placeholder {
@@ -694,7 +701,7 @@ footer .logo-web-color {
   margin-bottom: 0;
 }
 
-.span {
+.modal-label-check .span {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -755,4 +762,64 @@ footer .logo-web-color {
 .modal.is-open {
   opacity: 1;
   pointer-events: auto;
+}
+
+/*===================== FOOTER FORM =====================*/
+
+.footer-form {
+}
+
+.footer-form-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-email {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.footer-email::placeholder {
+  color: #ffffff;
+}
+
+.footer-form-btn {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-form-icon {
+  margin-left: 16px;
+  fill: #fff;
 }
